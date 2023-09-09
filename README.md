@@ -1,7 +1,7 @@
 # replaceBlanksAccents
 Replace blank spaces with "-" character &amp; remove accents from file name
 
-Built in Python 3.11.3:
+Built in Python 3.11.3
 
 ## Requirements
 
