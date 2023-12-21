@@ -14,14 +14,18 @@ def split(path):
       replace = replace.replace('é', 'i')
       replace = replace.replace('ó', 'o')
       replace = replace.replace('ú', 'u')
-      eplace = replace.replace('Á', 'A')
+      replace = replace.replace('Á', 'A')
       replace = replace.replace('É', 'E')
       replace = replace.replace('Í', 'I')
       replace = replace.replace('Ó', 'O')
       replace = replace.replace('Ú', 'U')
       replace = replace.replace('ñ', 'n')
       replace = replace.replace(',', '')
-      os.rename(path+"\\"+files, path+"\\"+replace)
+      #Detect OS
+      #Windows
+      #os.rename(path+"\\"+files, path+"\\"+replace)
+      #Mac
+      os.rename(path+files, path+replace)
       print("\n", replace)
       counter += 1
   
